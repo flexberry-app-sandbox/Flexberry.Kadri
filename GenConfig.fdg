@@ -24,7 +24,7 @@
       }
     },
     "Backend": {
-      "AspNet": true,
+      "AspNet": false,
       "AspNetCore": true,
       "Java": true
     },
@@ -56,7 +56,7 @@
       },
       "Oracle": {
         "DiffSql": false,
-        "FullSql": false,
+        "FullSql": true,
         "ConnectionString": null
       },
       "Access": {
