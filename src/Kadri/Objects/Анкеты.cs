@@ -47,10 +47,18 @@ namespace IIS.Kadri
             "Образование as \'Образование\'",
             "Опыт_работы as \'Опыт_работы\'",
             "Должность.Название as \'Название\'"})]
-    public class Анкеты : IIS.Kadri.Физ_лица
+    public class Анкеты : ICSSoft.STORMNET.DataObject
     {
         
         private int fID;
+        
+        private string fФИО;
+        
+        private string fКонтакты;
+        
+        private string fОбразование;
+        
+        private string fОпыт_работы;
         
         private string fЛК;
         
@@ -94,6 +102,38 @@ namespace IIS.Kadri
         }
         
         /// <summary>
+        /// Контакты.
+        /// </summary>
+        // *** Start programmer edit section *** (Анкеты.Контакты CustomAttributes)
+
+        // *** End programmer edit section *** (Анкеты.Контакты CustomAttributes)
+        [StrLen(255)]
+        public virtual string Контакты
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Анкеты.Контакты Get start)
+
+                // *** End programmer edit section *** (Анкеты.Контакты Get start)
+                string result = this.fКонтакты;
+                // *** Start programmer edit section *** (Анкеты.Контакты Get end)
+
+                // *** End programmer edit section *** (Анкеты.Контакты Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Анкеты.Контакты Set start)
+
+                // *** End programmer edit section *** (Анкеты.Контакты Set start)
+                this.fКонтакты = value;
+                // *** Start programmer edit section *** (Анкеты.Контакты Set end)
+
+                // *** End programmer edit section *** (Анкеты.Контакты Set end)
+            }
+        }
+        
+        /// <summary>
         /// ЛК.
         /// </summary>
         // *** Start programmer edit section *** (Анкеты.ЛК CustomAttributes)
@@ -123,6 +163,102 @@ namespace IIS.Kadri
                 // *** Start programmer edit section *** (Анкеты.ЛК Set end)
 
                 // *** End programmer edit section *** (Анкеты.ЛК Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Образование.
+        /// </summary>
+        // *** Start programmer edit section *** (Анкеты.Образование CustomAttributes)
+
+        // *** End programmer edit section *** (Анкеты.Образование CustomAttributes)
+        [StrLen(255)]
+        public virtual string Образование
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Анкеты.Образование Get start)
+
+                // *** End programmer edit section *** (Анкеты.Образование Get start)
+                string result = this.fОбразование;
+                // *** Start programmer edit section *** (Анкеты.Образование Get end)
+
+                // *** End programmer edit section *** (Анкеты.Образование Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Анкеты.Образование Set start)
+
+                // *** End programmer edit section *** (Анкеты.Образование Set start)
+                this.fОбразование = value;
+                // *** Start programmer edit section *** (Анкеты.Образование Set end)
+
+                // *** End programmer edit section *** (Анкеты.Образование Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Опыт_работы.
+        /// </summary>
+        // *** Start programmer edit section *** (Анкеты.Опыт_работы CustomAttributes)
+
+        // *** End programmer edit section *** (Анкеты.Опыт_работы CustomAttributes)
+        [StrLen(255)]
+        public virtual string Опыт_работы
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Анкеты.Опыт_работы Get start)
+
+                // *** End programmer edit section *** (Анкеты.Опыт_работы Get start)
+                string result = this.fОпыт_работы;
+                // *** Start programmer edit section *** (Анкеты.Опыт_работы Get end)
+
+                // *** End programmer edit section *** (Анкеты.Опыт_работы Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Анкеты.Опыт_работы Set start)
+
+                // *** End programmer edit section *** (Анкеты.Опыт_работы Set start)
+                this.fОпыт_работы = value;
+                // *** Start programmer edit section *** (Анкеты.Опыт_работы Set end)
+
+                // *** End programmer edit section *** (Анкеты.Опыт_работы Set end)
+            }
+        }
+        
+        /// <summary>
+        /// ФИО.
+        /// </summary>
+        // *** Start programmer edit section *** (Анкеты.ФИО CustomAttributes)
+
+        // *** End programmer edit section *** (Анкеты.ФИО CustomAttributes)
+        [StrLen(255)]
+        public virtual string ФИО
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Анкеты.ФИО Get start)
+
+                // *** End programmer edit section *** (Анкеты.ФИО Get start)
+                string result = this.fФИО;
+                // *** Start programmer edit section *** (Анкеты.ФИО Get end)
+
+                // *** End programmer edit section *** (Анкеты.ФИО Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Анкеты.ФИО Set start)
+
+                // *** End programmer edit section *** (Анкеты.ФИО Set start)
+                this.fФИО = value;
+                // *** Start programmer edit section *** (Анкеты.ФИО Set end)
+
+                // *** End programmer edit section *** (Анкеты.ФИО Set end)
             }
         }
         

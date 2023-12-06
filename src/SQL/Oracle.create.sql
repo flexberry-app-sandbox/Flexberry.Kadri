@@ -54,15 +54,15 @@ CREATE TABLE "Сотрудники"
 
 	"ID" NUMBER(10) NULL,
 
+	"ФИО" NVARCHAR2(255) NULL,
+
+	"Контакты" NVARCHAR2(255) NULL,
+
+	"Образование" NVARCHAR2(255) NULL,
+
+	"Опыт_работы" NVARCHAR2(255) NULL,
+
 	"Дата_приема" DATE NULL,
-
-	"ФИО" NVARCHAR2(255) NOT NULL,
-
-	"Контакты" NVARCHAR2(255) NOT NULL,
-
-	"Образование" NVARCHAR2(255) NOT NULL,
-
-	"Опыт_работы" NVARCHAR2(255) NOT NULL,
 
 	"Отдел" RAW(16) NOT NULL,
 
@@ -79,15 +79,15 @@ CREATE TABLE "Анкеты"
 
 	"ID" NUMBER(10) NOT NULL,
 
+	"ФИО" NVARCHAR2(255) NULL,
+
+	"Контакты" NVARCHAR2(255) NULL,
+
+	"Образование" NVARCHAR2(255) NULL,
+
+	"Опыт_работы" NVARCHAR2(255) NULL,
+
 	"ЛК" NVARCHAR2(255) NOT NULL,
-
-	"ФИО" NVARCHAR2(255) NOT NULL,
-
-	"Контакты" NVARCHAR2(255) NOT NULL,
-
-	"Образование" NVARCHAR2(255) NOT NULL,
-
-	"Опыт_работы" NVARCHAR2(255) NOT NULL,
 
 	"Должность" RAW(16) NOT NULL,
 

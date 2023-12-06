@@ -52,10 +52,18 @@ namespace IIS.Kadri
             "Опыт_работы as \'Опыт_работы\'",
             "Отдел.Название as \'Название\'",
             "Должность.Название as \'Название\'"})]
-    public class Сотрудники : IIS.Kadri.Физ_лица
+    public class Сотрудники : ICSSoft.STORMNET.DataObject
     {
         
         private int fID;
+        
+        private string fФИО;
+        
+        private string fКонтакты;
+        
+        private string fОбразование;
+        
+        private string fОпыт_работы;
         
         private System.DateTime fДата_приема;
         
@@ -127,6 +135,134 @@ namespace IIS.Kadri
                 // *** Start programmer edit section *** (Сотрудники.Дата_приема Set end)
 
                 // *** End programmer edit section *** (Сотрудники.Дата_приема Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Контакты.
+        /// </summary>
+        // *** Start programmer edit section *** (Сотрудники.Контакты CustomAttributes)
+
+        // *** End programmer edit section *** (Сотрудники.Контакты CustomAttributes)
+        [StrLen(255)]
+        public virtual string Контакты
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Сотрудники.Контакты Get start)
+
+                // *** End programmer edit section *** (Сотрудники.Контакты Get start)
+                string result = this.fКонтакты;
+                // *** Start programmer edit section *** (Сотрудники.Контакты Get end)
+
+                // *** End programmer edit section *** (Сотрудники.Контакты Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Сотрудники.Контакты Set start)
+
+                // *** End programmer edit section *** (Сотрудники.Контакты Set start)
+                this.fКонтакты = value;
+                // *** Start programmer edit section *** (Сотрудники.Контакты Set end)
+
+                // *** End programmer edit section *** (Сотрудники.Контакты Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Образование.
+        /// </summary>
+        // *** Start programmer edit section *** (Сотрудники.Образование CustomAttributes)
+
+        // *** End programmer edit section *** (Сотрудники.Образование CustomAttributes)
+        [StrLen(255)]
+        public virtual string Образование
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Сотрудники.Образование Get start)
+
+                // *** End programmer edit section *** (Сотрудники.Образование Get start)
+                string result = this.fОбразование;
+                // *** Start programmer edit section *** (Сотрудники.Образование Get end)
+
+                // *** End programmer edit section *** (Сотрудники.Образование Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Сотрудники.Образование Set start)
+
+                // *** End programmer edit section *** (Сотрудники.Образование Set start)
+                this.fОбразование = value;
+                // *** Start programmer edit section *** (Сотрудники.Образование Set end)
+
+                // *** End programmer edit section *** (Сотрудники.Образование Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Опыт_работы.
+        /// </summary>
+        // *** Start programmer edit section *** (Сотрудники.Опыт_работы CustomAttributes)
+
+        // *** End programmer edit section *** (Сотрудники.Опыт_работы CustomAttributes)
+        [StrLen(255)]
+        public virtual string Опыт_работы
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Сотрудники.Опыт_работы Get start)
+
+                // *** End programmer edit section *** (Сотрудники.Опыт_работы Get start)
+                string result = this.fОпыт_работы;
+                // *** Start programmer edit section *** (Сотрудники.Опыт_работы Get end)
+
+                // *** End programmer edit section *** (Сотрудники.Опыт_работы Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Сотрудники.Опыт_работы Set start)
+
+                // *** End programmer edit section *** (Сотрудники.Опыт_работы Set start)
+                this.fОпыт_работы = value;
+                // *** Start programmer edit section *** (Сотрудники.Опыт_работы Set end)
+
+                // *** End programmer edit section *** (Сотрудники.Опыт_работы Set end)
+            }
+        }
+        
+        /// <summary>
+        /// ФИО.
+        /// </summary>
+        // *** Start programmer edit section *** (Сотрудники.ФИО CustomAttributes)
+
+        // *** End programmer edit section *** (Сотрудники.ФИО CustomAttributes)
+        [StrLen(255)]
+        public virtual string ФИО
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Сотрудники.ФИО Get start)
+
+                // *** End programmer edit section *** (Сотрудники.ФИО Get start)
+                string result = this.fФИО;
+                // *** Start programmer edit section *** (Сотрудники.ФИО Get end)
+
+                // *** End programmer edit section *** (Сотрудники.ФИО Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Сотрудники.ФИО Set start)
+
+                // *** End programmer edit section *** (Сотрудники.ФИО Set start)
+                this.fФИО = value;
+                // *** Start programmer edit section *** (Сотрудники.ФИО Set end)
+
+                // *** End programmer edit section *** (Сотрудники.ФИО Set end)
             }
         }
         

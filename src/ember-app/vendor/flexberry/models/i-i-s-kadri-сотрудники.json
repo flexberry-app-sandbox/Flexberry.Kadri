@@ -3,8 +3,8 @@
   "modelName": "i-i-s-kadri-сотрудники",
   "className": "Сотрудники",
   "nameSpace": "IIS.Kadri",
-  "parentModelName": "i-i-s-kadri-физ-лица",
-  "parentClassName": "Физ_лица",
+  "parentModelName": null,
+  "parentClassName": null,
   "attrs": [
     {
       "name": "iD",
@@ -19,6 +19,42 @@
       "name": "дата_приема",
       "type": "date",
       "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "контакты",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "образование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "опыт_работы",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фИО",
+      "type": "string",
+      "flexberryType": "string",
       "notNull": false,
       "defaultValue": "",
       "stored": true,

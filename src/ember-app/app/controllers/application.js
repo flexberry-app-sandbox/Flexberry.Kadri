@@ -28,37 +28,30 @@ export default Controller.extend({
             link: 'i-i-s-kadri-контроль-т-з-l',
             caption: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-контроль-т-з-l.caption'),
             title: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-контроль-т-з-l.title'),
-            icon: 'file',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-kadri-должности-l',
             caption: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-должности-l.caption'),
             title: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-должности-l.title'),
-            icon: 'archive',
-            children: null
-          }, {
-            link: 'i-i-s-kadri-физ-лица-l',
-            caption: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-физ-лица-l.caption'),
-            title: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-физ-лица-l.title'),
-            icon: 'edit',
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-kadri-сотрудники-l',
             caption: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-сотрудники-l.caption'),
             title: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-сотрудники-l.title'),
-            icon: 'book',
+            icon: 'suitcase',
             children: null
           }, {
             link: 'i-i-s-kadri-анкеты-l',
             caption: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-анкеты-l.caption'),
             title: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-анкеты-l.title'),
-            icon: 'suitcase',
+            icon: 'calendar',
             children: null
           }, {
             link: 'i-i-s-kadri-отделы-l',
             caption: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-отделы-l.caption'),
             title: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-отделы-l.title'),
-            icon: 'address card',
             children: null
           }]
         }

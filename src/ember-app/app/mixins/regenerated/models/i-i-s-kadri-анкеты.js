@@ -6,7 +6,11 @@ import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes'
 
 export let Model = Mixin.create({
   iD: DS.attr('number'),
+  контакты: DS.attr('string'),
   лК: DS.attr('string'),
+  образование: DS.attr('string'),
+  опыт_работы: DS.attr('string'),
+  фИО: DS.attr('string'),
   должность: DS.belongsTo('i-i-s-kadri-должности', { inverse: null, async: false })
 });
 
@@ -18,11 +22,35 @@ export let ValidationRules = {
       validator('number', { allowString: true, integer: true }),
     ],
   },
+  контакты: {
+    descriptionKey: 'models.i-i-s-kadri-анкеты.validations.контакты.__caption__',
+    validators: [
+      validator('ds-error'),
+    ],
+  },
   лК: {
     descriptionKey: 'models.i-i-s-kadri-анкеты.validations.лК.__caption__',
     validators: [
       validator('ds-error'),
       validator('presence', true),
+    ],
+  },
+  образование: {
+    descriptionKey: 'models.i-i-s-kadri-анкеты.validations.образование.__caption__',
+    validators: [
+      validator('ds-error'),
+    ],
+  },
+  опыт_работы: {
+    descriptionKey: 'models.i-i-s-kadri-анкеты.validations.опыт_работы.__caption__',
+    validators: [
+      validator('ds-error'),
+    ],
+  },
+  фИО: {
+    descriptionKey: 'models.i-i-s-kadri-анкеты.validations.фИО.__caption__',
+    validators: [
+      validator('ds-error'),
     ],
   },
   должность: {
@@ -32,12 +60,6 @@ export let ValidationRules = {
       validator('presence', true),
     ],
   },
-};
-
-export let defineBaseModel = function (modelClass) {
-  modelClass.reopenClass({
-    _parentModelName: 'i-i-s-kadri-физ-лица'
-  });
 };
 
 export let defineProjections = function (modelClass) {

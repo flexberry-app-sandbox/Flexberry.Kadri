@@ -49,13 +49,13 @@ CREATE TABLE [Сотрудники] (
 
 	 [Дата_приема] DATETIME  NULL,
 
-	 [ФИО] VARCHAR(255)  NOT NULL,
+	 [Контакты] VARCHAR(255)  NULL,
 
-	 [Контакты] VARCHAR(255)  NOT NULL,
+	 [Образование] VARCHAR(255)  NULL,
 
-	 [Образование] VARCHAR(255)  NOT NULL,
+	 [Опыт_работы] VARCHAR(255)  NULL,
 
-	 [Опыт_работы] VARCHAR(255)  NOT NULL,
+	 [ФИО] VARCHAR(255)  NULL,
 
 	 [Должность] UNIQUEIDENTIFIER  NOT NULL,
 
@@ -70,15 +70,15 @@ CREATE TABLE [Анкеты] (
 
 	 [ID] INT  NOT NULL,
 
+	 [Контакты] VARCHAR(255)  NULL,
+
 	 [ЛК] VARCHAR(255)  NOT NULL,
 
-	 [ФИО] VARCHAR(255)  NOT NULL,
+	 [Образование] VARCHAR(255)  NULL,
 
-	 [Контакты] VARCHAR(255)  NOT NULL,
+	 [Опыт_работы] VARCHAR(255)  NULL,
 
-	 [Образование] VARCHAR(255)  NOT NULL,
-
-	 [Опыт_работы] VARCHAR(255)  NOT NULL,
+	 [ФИО] VARCHAR(255)  NULL,
 
 	 [Должность] UNIQUEIDENTIFIER  NOT NULL,
 

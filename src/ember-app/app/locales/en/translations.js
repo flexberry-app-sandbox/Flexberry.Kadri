@@ -109,10 +109,6 @@ $.extend(true, translations, {
             caption: 'Должности',
             title: ''
           },
-          'i-i-s-kadri-физ-лица-l': {
-            caption: 'Физ_лица',
-            title: ''
-          },
           'i-i-s-kadri-сотрудники-l': {
             caption: 'Сотрудники',
             title: ''
@@ -123,6 +119,10 @@ $.extend(true, translations, {
           },
           'i-i-s-kadri-отделы-l': {
             caption: 'Отделы',
+            title: ''
+          },
+          'i-i-s-kadri-физ-лица-l': {
+            caption: 'Физ_лица',
             title: ''
           }
         }

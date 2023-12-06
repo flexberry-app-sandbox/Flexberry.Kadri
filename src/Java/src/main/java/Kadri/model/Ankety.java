@@ -25,9 +25,6 @@ public class Ankety {
     @Column(name = "ID")
     private Integer id;
 
-    @Column(name = "ЛК")
-    private String лк;
-
     @Column(name = "ФИО")
     private String фио;
 
@@ -39,6 +36,9 @@ public class Ankety {
 
     @Column(name = "Опыт_работы")
     private String опыт_работы;
+
+    @Column(name = "ЛК")
+    private String лк;
 
     @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "Dolzhnost")
@@ -71,14 +71,6 @@ public class Ankety {
       this.id = id;
     }
 
-    public String getЛК() {
-      return лк;
-    }
-
-    public void setЛК(String лк) {
-      this.лк = лк;
-    }
-
     public String getФИО() {
       return фио;
     }
@@ -109,6 +101,14 @@ public class Ankety {
 
     public void setОпыт_работы(String опыт_работы) {
       this.опыт_работы = опыт_работы;
+    }
+
+    public String getЛК() {
+      return лк;
+    }
+
+    public void setЛК(String лк) {
+      this.лк = лк;
     }
 
 

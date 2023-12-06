@@ -26,9 +26,6 @@ public class Sotrudniki {
     @Column(name = "ID")
     private Integer id;
 
-    @Column(name = "Дата_приема")
-    private Date дата_приема;
-
     @Column(name = "ФИО")
     private String фио;
 
@@ -40,6 +37,9 @@ public class Sotrudniki {
 
     @Column(name = "Опыт_работы")
     private String опыт_работы;
+
+    @Column(name = "Дата_приема")
+    private Date дата_приема;
 
     @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "Otdel")
@@ -82,14 +82,6 @@ public class Sotrudniki {
       this.id = id;
     }
 
-    public Date getДата_приема() {
-      return дата_приема;
-    }
-
-    public void setДата_приема(Date дата_приема) {
-      this.дата_приема = дата_приема;
-    }
-
     public String getФИО() {
       return фио;
     }
@@ -120,6 +112,14 @@ public class Sotrudniki {
 
     public void setОпыт_работы(String опыт_работы) {
       this.опыт_работы = опыт_работы;
+    }
+
+    public Date getДата_приема() {
+      return дата_приема;
+    }
+
+    public void setДата_приема(Date дата_приема) {
+      this.дата_приема = дата_приема;
     }
 
 
