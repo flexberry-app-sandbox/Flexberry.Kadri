@@ -1,0 +1,89 @@
+﻿{
+  "name": "IISKadriКонтроль_ТЗ",
+  "modelName": "i-i-s-kadri-контроль-т-з",
+  "className": "Контроль_ТЗ",
+  "nameSpace": "IIS.Kadri",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iD",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "дата_проверки",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "проверяемые",
+      "relatedTo": "i-i-s-kadri-проверяемые",
+      "inverse": "контроль_ТЗ"
+    }
+  ],
+  "projections": [
+    {
+      "name": "Контроль_ТЗE",
+      "modelName": "i-i-s-kadri-контроль-т-з",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата_проверки",
+          "caption": "Дата_проверки",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ПроверяемыеE",
+          "caption": "Проверяемые",
+          "name": "проверяемые",
+          "relatedTo": "i-i-s-kadri-проверяемые",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "Контроль_ТЗL",
+      "modelName": "i-i-s-kadri-контроль-т-з",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата_проверки",
+          "caption": "Дата_проверки",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kadri-физ-лица-e",
+  "editForm": "i-i-s-kadri-физ-лица-e",
+  "external": false,
+  "caption": "Физ_лица",
+  "name": "IISKadriФиз_лицаL",
+  "className": "Физ_лицаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kadri-физ-лица",
+      "modelProjection": "Физ_лицаL"
+    }
+  ]
+}

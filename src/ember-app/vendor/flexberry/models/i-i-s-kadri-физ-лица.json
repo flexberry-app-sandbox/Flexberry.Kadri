@@ -1,0 +1,117 @@
+﻿{
+  "name": "IISKadriФиз_лица",
+  "modelName": "i-i-s-kadri-физ-лица",
+  "className": "Физ_лица",
+  "nameSpace": "IIS.Kadri",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "контакты",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "образование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "опыт_работы",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фИО",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "Физ_лицаE",
+      "modelName": "i-i-s-kadri-физ-лица",
+      "attrs": [
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "контакты",
+          "caption": "Контакты",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "образование",
+          "caption": "Образование",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "опыт_работы",
+          "caption": "Опыт_работы",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "Физ_лицаL",
+      "modelName": "i-i-s-kadri-физ-лица",
+      "attrs": [
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "контакты",
+          "caption": "Контакты",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "образование",
+          "caption": "Образование",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "опыт_работы",
+          "caption": "Опыт_работы",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
