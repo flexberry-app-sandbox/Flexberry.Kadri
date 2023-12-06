@@ -28,30 +28,31 @@ export default Controller.extend({
             link: 'i-i-s-kadri-контроль-т-з-l',
             caption: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-контроль-т-з-l.caption'),
             title: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-контроль-т-з-l.title'),
-            icon: 'table',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-kadri-должности-l',
             caption: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-должности-l.caption'),
             title: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-должности-l.title'),
-            icon: 'book',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-kadri-сотрудники-l',
             caption: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-сотрудники-l.caption'),
             title: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-сотрудники-l.title'),
-            icon: 'suitcase',
+            icon: 'folder open',
             children: null
           }, {
             link: 'i-i-s-kadri-анкеты-l',
             caption: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-анкеты-l.caption'),
             title: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-анкеты-l.title'),
-            icon: 'calendar',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-kadri-отделы-l',
             caption: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-отделы-l.caption'),
             title: i18n.t('forms.application.sitemap.отдел-кадров.i-i-s-kadri-отделы-l.title'),
+            icon: 'chart bar',
             children: null
           }]
         }
